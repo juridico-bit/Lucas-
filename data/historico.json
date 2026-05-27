@@ -1,0 +1,3205 @@
+[
+  {
+    "id": "149d0b2b-24f4-4314-83ba-fb1b2d0de17a",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Os passageiros tinham comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e necessidade de pernoite forçado em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20387
+  },
+  {
+    "id": "3a301922-f0ee-4786-8085-6c0a545bb101",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "evento familiar - páscoa",
+      "desc_compromisso_detalhe": "O passageiro havia comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20585
+  },
+  {
+    "id": "5d02dd89-3017-4f45-b0ba-66cd793c89f4",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "",
+        "destino_cidade": "",
+        "data": "",
+        "dia_semana": "",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 14146
+  },
+  {
+    "id": "5c42e4f4-5f3e-4358-8c9d-180b6de49c04",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "segunda-feira",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso familiar antes da Páscoa",
+      "desc_compromisso_detalhe": "Os passageiros compraram a passagem com o objetivo de chegar a São Paulo antes da Páscoa (domingo, 05/04/2026) para descansar e se recuperar do fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20764
+  },
+  {
+    "id": "8a61f889-713f-4e3d-9572-d04564ebcb97",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Chegada prevista antes da Páscoa para descansar do fuso horário, prejudicada pelo atraso que forçou pernoite em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20536
+  },
+  {
+    "id": "87134d02-79f9-4bb5-aac1-c0293b43511b",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Chegada prevista antes da Páscoa para descansar do fuso horário, prejudicada pelo atraso que forçou pernoite em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20536
+  },
+  {
+    "id": "e85361b7-1632-4879-9a73-a0b1d74c9f4e",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham comprado a passagem para chegar antes da Páscoa (05/04/2026) e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20906
+  },
+  {
+    "id": "e6cea7be-fcb0-4025-bce1-fb0546179925",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham comprado a passagem para chegar antes da Páscoa (05/04/2026) e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 20906
+  },
+  {
+    "id": "e40fdbf2-2409-41b5-be96-2518c4efabf1",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Os passageiros haviam comprado a passagem para chegar antes da Páscoa (06/04/2026) e ter tempo de descansar e se recuperar do fuso horário, o que não foi possível devido ao atraso e necessidade de pernoite forçado em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": true,
+      "gastos": [
+        {
+          "categoria": "hospedagem",
+          "valor": "",
+          "descricao": ""
+        }
+      ],
+      "valor_morais": "16000.00",
+      "valor_morais_extenso": "dezesseis mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aéreas, não permitiram a troca e tivemos que dormir em Roma para somente no outro dia embarcar para SP (tínhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    },
+    "tempo_extracao_ms": 16328
+  },
+  {
+    "id": "29cd0353-c42d-4ee4-85ac-cfdea61dca4c",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Data: antes de 05/04/2026 (Páscoa). Os passageiros compraram a passagem para chegar antes da páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e realocação do voo.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "8300ac0a-cded-462c-bcf7-1113bb6bf433",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Os passageiros tinham comprado a passagem para chegar antes da páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "11999.99",
+      "valor_morais_extenso": "onze mil, novecentos e noventa e nove reais e noventa e nove centavos",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "aa58fbfc-6bce-400a-850a-7e5d5d75d334",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "AZ674",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Os passageiros compraram passagem para chegar antes da Páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e necessidade de pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "e8268742-fa34-44b2-abf2-ea7b043f812b",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Os passageiros haviam planejado chegar antes da páscoa (Páscoa de 2026) para poder descansar devido ao fuso horário, mas o atraso e a realocação para o dia seguinte impossibilitaram esse plano. A chegada prevista era 04/04/2026 às 05:20 (antes da Páscoa) mas chegaram apenas em 05/04/2026.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "38465336-108b-4503-adcf-b2881e869865",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 17:20",
+      "tempo_atraso": "12 horas",
+      "tempo_atraso_simples": "12h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Chegada planejada antes da Páscoa para descansar devido ao fuso horário, mas o atraso e necessidade de pernoite em Roma impossibilitaram o descanso planejado.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "9500.00",
+      "valor_morais_extenso": "nove mil, quinhentos reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "5cf1f098-6efa-47af-8cf4-f1a347c3817d",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 17:20",
+      "tempo_atraso": "12 horas",
+      "tempo_atraso_simples": "12h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Chegada planejada antes da Páscoa para descansar devido ao fuso horário, mas o atraso e necessidade de pernoite em Roma impossibilitaram o descanso planejado.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "9500.00",
+      "valor_morais_extenso": "nove mil, quinhentos reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "d4af2ab2-5b93-495a-8f64-fc0b2677c10a",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "27/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ679",
+          "origem_cidade": "São Paulo",
+          "origem_sigla": "GRU",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "22/03/2026",
+          "dia_semana": "Sábado",
+          "partida": "20:40",
+          "chegada": "12:00"
+        },
+        {
+          "numero": "AZ344",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Nice",
+          "destino_sigla": "NCE",
+          "data": "23/03/2026",
+          "dia_semana": "Domingo",
+          "partida": "13:15",
+          "chegada": "14:30"
+        },
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Sexta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Sexta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "Descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Tinha comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "27/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "37155216-3b28-4541-96ee-adc9dd7eef37",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "NICE",
+          "origem_sigla": "NCE",
+          "destino_cidade": "ROME",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "ROME",
+          "origem_sigla": "FCO",
+          "destino_cidade": "SAO PAULO",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "ROME",
+        "destino_cidade": "SAO PAULO",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Os passageiros tinham comprado a passagem para chegar antes da páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso do voo e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que dormir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "5f10aa7a-abd6-4991-b3bc-de8de05453a4",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso pré-Páscoa",
+      "desc_compromisso_detalhe": "Passagem comprada para chegar antes da Páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso e realocação do voo.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que dormir em Roma para somente no outro dia embarcar para SP. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "dc72a9a6-37a4-4782-b1d9-cea013f83f41",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso pré-Páscoa",
+      "desc_compromisso_detalhe": "Passageiros compraram passagem para chegar antes da Páscoa (domingo 05/04/2026) e poder descansar devido ao fuso horário, chegada prevista na sexta-feira 04/04/2026 às 05:20. Com o atraso, chegaram apenas no sábado 05/04/2026, perdendo o tempo de descanso planejado antes do feriado.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "ad8a0631-785c-46b3-a694-94bc916dfeb8",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Chegada programada antes da Páscoa (04/04/2026) para descanso devido ao fuso horário. Não foi possível cumprir devido ao atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "12000.00",
+      "valor_morais_extenso": "doze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "4253d5dc-10ba-4573-b5fb-12d1dca6acf2",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, brasileiro, biomedica/Dentista,\ncasado, inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, brasileiro, administrador,\ncasado, inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da páscoa",
+      "desc_compromisso_detalhe": "Passageiros compraram passagem para chegar antes da páscoa e poder descansar devido ao fuso horário, o que não foi possível devido ao atraso do voo e realocação para o dia seguinte.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "11000.00",
+      "valor_morais_extenso": "onze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "9f9677cb-4bda-4632-bfe4-1ded364da354",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Roma",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Roma",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Roma",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 17:00",
+      "tempo_atraso": "11 horas e 40 minutos",
+      "tempo_atraso_simples": "11h40min",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Chegada prevista antes da Páscoa para descansar devido ao fuso horário, compromisso frustrado pelo atraso e pernoite forçado em Roma",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "8500.00",
+      "valor_morais_extenso": "oito mil, quinhentos reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo de Nice para Roma pela ITA Airways atrasou algumas horas. Tinha conexão de Roma para São Paulo pela mesma companhia. Chegando em Roma ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas, não permitiram a troca e tiveram que dormir em Roma para somente no outro dia embarcar para SP. Tinham comprado essa passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "f736cdf9-e256-43b0-a4b5-2e64fb326f89",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sábado",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros compraram passagem para chegar antes da Páscoa e descansar devido ao fuso horário, compromisso que não foi possível cumprir devido ao atraso e necessidade de pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "13000.00",
+      "valor_morais_extenso": "treze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Eu tinha um voo de Nice para Roma pela Ita Airways que atrasou algumas horas, e depois tinha uma conexão de pela mesma cia, de Roma para São Paulo. Chegando em Roma ficamos procurando informação sobre o que poderíamos fazer, e mesmo tendo outros voos de diferentes cias aereas, não permitiram a troca e tivemos que durmir em Roma para somente no outro dia embarcar para SP (tinhamos comprado essa passagem para chegar antes da páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na minha casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "8c1a79d6-6cff-4543-8f7c-d9e6f9a21a78",
+    "modulo": "Voo Internacional",
+    "autor": "Desconhecido",
+    "companhia": "ITA",
+    "data_geracao": "26/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Chegada planejada antes da Páscoa para descansar devido ao fuso horário, compromisso frustrado pelo atraso do voo",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "14000.00",
+      "valor_morais_extenso": "quatorze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo de Nice para Roma pela ITA Airways atrasou algumas horas. Havia conexão de Roma para São Paulo pela mesma companhia. Chegando em Roma ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas, não permitiram a troca e tiveram que dormir em Roma para somente no outro dia embarcar para SP. Tinham comprado essa passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Além disso, as bagagens foram extraviadas e somente depois de 3 dias chegaram na casa.",
+      "particularidade": "",
+      "id_caso": "",
+      "data_peticao": "26/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "e642bd1c-c50f-4570-9b12-dbd836b41889",
+    "modulo": "Voo Internacional",
+    "autor": "Renato Paixão De Mendonca, Mariana Oliveira Velloso",
+    "companhia": "ITA Airways",
+    "data_geracao": "25/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "Renato Paixão De Mendonca",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "Mariana Oliveira Velloso",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA Airways",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 23:59",
+      "tempo_atraso": "18 horas e 39 minutos",
+      "tempo_atraso_simples": "18h39min",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham planejado chegar antes da Páscoa para descansar devido ao fuso horário, compromisso que foi prejudicado pelo atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "13000.00",
+      "valor_morais_extenso": "treze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo AZ355 de Nice para Roma atrasou algumas horas. Tinha conexão AZ674 de Roma para São Paulo na mesma companhia. Ao chegar em Roma, ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas disponíveis, não permitiram a troca. Tiveram que dormir em Roma e somente no dia seguinte embarcaram para São Paulo. Haviam comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Bagagens foram extraviadas e somente depois de 3 dias chegaram na residência.",
+      "particularidade": "",
+      "id_caso": "258978",
+      "data_peticao": "25/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "e00f5796-0e89-4a94-ba20-6fe3f31f3124",
+    "modulo": "Voo Internacional",
+    "autor": "Renato Paixão De Mendonca, Mariana Oliveira Velloso",
+    "companhia": "ITA Airways",
+    "data_geracao": "25/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "Renato Paixão De Mendonca",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "Mariana Oliveira Velloso",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA Airways",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 23:59",
+      "tempo_atraso": "18 horas e 39 minutos",
+      "tempo_atraso_simples": "18h39min",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham planejado chegar antes da Páscoa para descansar devido ao fuso horário, compromisso que foi prejudicado pelo atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "13000.00",
+      "valor_morais_extenso": "treze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo AZ355 de Nice para Roma atrasou algumas horas. Tinha conexão AZ674 de Roma para São Paulo na mesma companhia. Ao chegar em Roma, ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas disponíveis, não permitiram a troca. Tiveram que dormir em Roma e somente no dia seguinte embarcaram para São Paulo. Haviam comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Bagagens foram extraviadas e somente depois de 3 dias chegaram na residência.",
+      "particularidade": "",
+      "id_caso": "258978",
+      "data_peticao": "25/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "b04686b5-c9c3-41a9-bc65-a0ba74e14095",
+    "modulo": "Voo Internacional",
+    "autor": "Renato Paixão De Mendonca, Mariana Oliveira Velloso",
+    "companhia": "ITA Airways",
+    "data_geracao": "25/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "Renato Paixão De Mendonca",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "Mariana Oliveira Velloso",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA Airways",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 23:59",
+      "tempo_atraso": "18 horas e 39 minutos",
+      "tempo_atraso_simples": "18h39min",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham planejado chegar antes da Páscoa para descansar devido ao fuso horário, compromisso que foi prejudicado pelo atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "13000.00",
+      "valor_morais_extenso": "treze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo AZ355 de Nice para Roma atrasou algumas horas. Tinha conexão AZ674 de Roma para São Paulo na mesma companhia. Ao chegar em Roma, ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas disponíveis, não permitiram a troca. Tiveram que dormir em Roma e somente no dia seguinte embarcaram para São Paulo. Haviam comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Bagagens foram extraviadas e somente depois de 3 dias chegaram na residência.",
+      "particularidade": "",
+      "id_caso": "258978",
+      "data_peticao": "25/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "72814b7d-2c95-4a3b-8dc6-e433c156b92c",
+    "modulo": "Voo Internacional",
+    "autor": "Renato Paixão De Mendonca, Mariana Oliveira Velloso",
+    "companhia": "ITA Airways",
+    "data_geracao": "25/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "Renato Paixão De Mendonca",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "Mariana Oliveira Velloso",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA Airways",
+      "tipo_rota": "2conexoes",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "São Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "",
+        "origem_cidade": "Rome",
+        "destino_cidade": "São Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "04/04/2026 23:59",
+      "tempo_atraso": "18 horas e 39 minutos",
+      "tempo_atraso_simples": "18h39min",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Passageiros tinham planejado chegar antes da Páscoa para descansar devido ao fuso horário, compromisso que foi prejudicado pelo atraso e pernoite forçado em Roma.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "13000.00",
+      "valor_morais_extenso": "treze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo AZ355 de Nice para Roma atrasou algumas horas. Tinha conexão AZ674 de Roma para São Paulo na mesma companhia. Ao chegar em Roma, ficaram procurando informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias aéreas disponíveis, não permitiram a troca. Tiveram que dormir em Roma e somente no dia seguinte embarcaram para São Paulo. Haviam comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. Bagagens foram extraviadas e somente depois de 3 dias chegaram na residência.",
+      "particularidade": "",
+      "id_caso": "258978",
+      "data_peticao": "25/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "622b3f27-e326-4a53-839e-613b62ab1588",
+    "modulo": "Voo Internacional",
+    "autor": "Renato Paixão De Mendonca, Mariana Oliveira Velloso",
+    "companhia": "ITA Airways",
+    "data_geracao": "25/05/2026",
+    "dados": {
+      "template": "voo-internacional-multi-autor",
+      "num_autores": 2,
+      "autores": [
+        {
+          "nome": "Renato Paixão De Mendonca",
+          "qualificacao": "Renato Paixão De Mendonca, Brasileiro(a), Administrador,\ncasado(a), inscrito no CPF sob o nº: 335.647.898-20, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        },
+        {
+          "nome": "Mariana Oliveira Velloso",
+          "qualificacao": "Mariana Oliveira Velloso, Brasileiro(a), Biomedica/Dentista,\ncasado(a), inscrito no CPF sob o nº: 015.262.986-60, residente e domiciliado na\nRua São Domingos Sávio, 201, ED FB 31, Vila Ida, 05455-040, São Paulo, São\nPaulo",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "ITA Airways",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "AZ355",
+          "origem_cidade": "Nice",
+          "origem_sigla": "NCE",
+          "destino_cidade": "Rome",
+          "destino_sigla": "FCO",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "19:20",
+          "chegada": "20:35"
+        },
+        {
+          "numero": "AZ674",
+          "origem_cidade": "Rome",
+          "origem_sigla": "FCO",
+          "destino_cidade": "Sao Paulo",
+          "destino_sigla": "GRU",
+          "data": "03/04/2026",
+          "dia_semana": "Quinta-feira",
+          "partida": "22:05",
+          "chegada": "05:20"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "AZ674",
+        "origem_cidade": "Rome",
+        "destino_cidade": "Sao Paulo",
+        "data": "04/04/2026",
+        "dia_semana": "Sexta-feira",
+        "partida": "",
+        "chegada": ""
+      },
+      "chegada_prevista": "04/04/2026 05:20",
+      "chegada_real": "05/04/2026 05:20",
+      "tempo_atraso": "24 horas e 0 minutos",
+      "tempo_atraso_simples": "24h",
+      "assistencia": [],
+      "perda_compromisso": "pessoal",
+      "desc_compromisso": "descanso antes da Páscoa",
+      "desc_compromisso_detalhe": "Os passageiros planejavam chegar antes da Páscoa para descansar devido ao fuso horário, mas o atraso e a realocação impediram esse objetivo.",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "15000.00",
+      "valor_morais_extenso": "quinze mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo de Nice para Roma pela ITA Airways atrasou algumas horas. Havia conexão de Roma para São Paulo pela mesma companhia. Ao chegar em Roma procuraram informação sobre o que poderiam fazer. Mesmo tendo outros voos de diferentes companhias, não permitiram a troca e tiveram que dormir em Roma para somente no outro dia embarcar para SP. Tinham comprado a passagem para chegar antes da Páscoa e poder descansar devido ao fuso, o que não foi possível. As bagagens foram extraviadas e somente depois de 3 dias chegaram na casa do passageiro.",
+      "particularidade": "",
+      "id_caso": "258929",
+      "data_peticao": "25/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "dd79de41-3184-4c85-8741-c56cacf00043",
+    "modulo": "Voo Nacional — 1 Autor",
+    "autor": "Daniel Akherman Couto",
+    "companhia": "AZUL",
+    "data_geracao": "22/05/2026",
+    "dados": {
+      "template": "voo-nacional-1-autor",
+      "num_autores": 1,
+      "autores": [
+        {
+          "nome": "Daniel Akherman Couto",
+          "qualificacao": "Daniel Akherman Couto, Brasileiro(a), Empresário(a),\nsolteiro(a), inscrito no CPF sob o nº: 103.590.927-80, residente e domiciliado na\nRua Pacheco Leão, 401, Jardim Botânico, 22460-030, Rio de Janeiro, Rio de\nJaneiro.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "AZUL",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "2916",
+          "origem_cidade": "Rio de Janeiro",
+          "origem_sigla": "SDU",
+          "destino_cidade": "Campinas",
+          "destino_sigla": "VCP",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "15:15",
+          "chegada": "16:25"
+        },
+        {
+          "numero": "4239",
+          "origem_cidade": "Campinas",
+          "origem_sigla": "VCP",
+          "destino_cidade": "Cuiabá",
+          "destino_sigla": "CGB",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "17:05",
+          "chegada": "18:15"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "4340",
+        "origem_cidade": "Campinas",
+        "destino_cidade": "Cuiabá",
+        "data": "07/04/2026",
+        "dia_semana": "Terça-feira",
+        "partida": "23:40",
+        "chegada": "00:50"
+      },
+      "chegada_prevista": "07/04/2026 18:15",
+      "chegada_real": "08/04/2026 00:50",
+      "tempo_atraso": "6 horas e 35 minutos",
+      "tempo_atraso_simples": "6h35min",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "reunião de trabalho",
+      "desc_compromisso_detalhe": "às 22h00 do dia 07/04/2026 no hotel da Seleção Brasileira Feminina em Cuiabá",
+      "gestante_bebe": "nao",
+      "condicao_especial": false,
+      "recebeu_hospedagem": false,
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "8000.00",
+      "valor_morais_extenso": "oito mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo saindo do Rio de Janeiro atrasou 40 minutos impossibilitando a conexão em Campinas. Passageiro foi realocado em voo às 23:40, ficando mais de 6 horas esperando no aeroporto. Recebeu apenas voucher de pequena refeição. Perdeu reunião marcada no hotel da Seleção Brasileira Feminina.",
+      "particularidade": "",
+      "id_caso": "251634",
+      "data_peticao": "22/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "0c774cd5-0418-47ec-884d-c503bbc25442",
+    "modulo": "Voo Nacional — 1 Autor",
+    "autor": "Daniel Akherman Couto",
+    "companhia": "AZUL",
+    "data_geracao": "22/05/2026",
+    "dados": {
+      "template": "voo-nacional-1-autor",
+      "num_autores": 1,
+      "autores": [
+        {
+          "nome": "Daniel Akherman Couto",
+          "qualificacao": "Daniel Akherman Couto, Brasileiro(a), Empresário(a),\nsolteiro(a), inscrito no CPF sob o nº: 103.590.927-80, residente e domiciliado na\nRua Pacheco Leão, 401, Jardim Botânico, 22460-030, Rio de Janeiro, Rio de\nJaneiro.",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "AZUL",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "2916",
+          "origem_cidade": "Rio de Janeiro",
+          "origem_sigla": "SDU",
+          "destino_cidade": "Campinas",
+          "destino_sigla": "VCP",
+          "data": "07/04/2026",
+          "dia_semana": "terça-feira",
+          "partida": "15:15",
+          "chegada": "16:25"
+        },
+        {
+          "numero": "4239",
+          "origem_cidade": "Campinas",
+          "origem_sigla": "VCP",
+          "destino_cidade": "Cuiabá",
+          "destino_sigla": "CGB",
+          "data": "07/04/2026",
+          "dia_semana": "terça-feira",
+          "partida": "17:05",
+          "chegada": "18:15"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "4340",
+        "origem_cidade": "Campinas",
+        "destino_cidade": "Cuiabá",
+        "data": "07/04/2026",
+        "dia_semana": "terça-feira",
+        "partida": "23:40",
+        "chegada": "00:50"
+      },
+      "chegada_prevista": "18:15",
+      "chegada_real": "01:00",
+      "tempo_atraso": "",
+      "tempo_atraso_simples": "",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "reunião de trabalho",
+      "desc_compromisso_detalhe": "às 22h00 do dia 07/04/2026 no hotel da Seleção Brasileira Feminina",
+      "gestante_bebe": "nao",
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "8000",
+      "valor_morais_extenso": "oito mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo saindo do Rio atrasou 40 minutos e impossibilitou a conexão em Campinas. A única possibilidade oferecida foi realocação em voo às 23:00 para Cuiabá. Passageiro ficou mais de 6 horas no aeroporto esperando o voo. Companhia forneceu apenas um voucher de pequena refeição. Chegou em Cuiabá à 1:00 da madrugada.",
+      "particularidade": "",
+      "id_caso": "251634",
+      "data_peticao": "22/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "479bc171-cf79-451b-a858-ed26473f81ad",
+    "modulo": "Voo Nacional — 1 Autor",
+    "autor": "Daniel Akherman Couto",
+    "companhia": "AZUL",
+    "data_geracao": "22/05/2026",
+    "dados": {
+      "template": "voo-nacional-1-autor",
+      "num_autores": 1,
+      "autores": [
+        {
+          "nome": "Daniel Akherman Couto",
+          "qualificacao": "Daniel Akherman Couto, Brasileiro(a), Empresário(a),\nsolteiro(a), inscrito no CPF sob o nº: 103.590.927-80, residente e domiciliado na\nRua Pacheco Leão, 401, Jardim Botânico, 22460-030, Rio de Janeiro, Rio de\nJaneiro.\n",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "AZUL",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "2916",
+          "origem_cidade": "Rio de Janeiro",
+          "origem_sigla": "SDU",
+          "destino_cidade": "Campinas",
+          "destino_sigla": "VCP",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "15:15",
+          "chegada": "16:25"
+        },
+        {
+          "numero": "4239",
+          "origem_cidade": "Campinas",
+          "origem_sigla": "VCP",
+          "destino_cidade": "Cuiabá",
+          "destino_sigla": "CGB",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "17:05",
+          "chegada": "18:15"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "4340",
+        "origem_cidade": "Campinas",
+        "destino_cidade": "Cuiabá",
+        "data": "07/04/2026",
+        "dia_semana": "Terça-feira",
+        "partida": "23:40",
+        "chegada": "00:50"
+      },
+      "chegada_prevista": "18:15",
+      "chegada_real": "00:50",
+      "tempo_atraso": "NaN horas e NaN minutos",
+      "tempo_atraso_simples": "NaNh",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "reunião de trabalho",
+      "desc_compromisso_detalhe": "às 22h00 do dia 07/04/2026 no hotel da Seleção Brasileira Feminina",
+      "gestante_bebe": "nao",
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "20000",
+      "valor_morais_extenso": "vinte mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo saindo do Rio de Janeiro atrasou 40 minutos impossibilitando a conexão em Campinas. Passageiro ficou mais de 6 horas no aeroporto esperando o voo de realocação. Companhia ofereceu apenas um voucher de pequena refeição.",
+      "particularidade": "",
+      "id_caso": "251634",
+      "data_peticao": "22/05/2026",
+      "observacoes_internas": ""
+    }
+  },
+  {
+    "id": "d7a64f84-147d-4d0f-aac7-f984e6388c0f",
+    "modulo": "Voo Nacional — 1 Autor",
+    "autor": "Daniel Akherman Couto ",
+    "companhia": "AZUL",
+    "data_geracao": "22/05/2026",
+    "dados": {
+      "template": "voo-nacional-1-autor",
+      "num_autores": 1,
+      "autores": [
+        {
+          "nome": "Daniel Akherman Couto ",
+          "qualificacao": "Daniel Akherman Couto, Brasileiro(a), Empresário(a),\nsolteiro(a), inscrito no CPF sob o nº: 103.590.927-80, residente e domiciliado na\nRua Pacheco Leão, 401, Jardim Botânico, 22460-030, Rio de Janeiro, Rio de\nJaneiro",
+          "cpf": "",
+          "rg": "",
+          "email": "",
+          "endereco": "",
+          "data_nascimento": "",
+          "idoso": false
+        }
+      ],
+      "companhia": "AZUL",
+      "tipo_rota": "conexao",
+      "voos": [
+        {
+          "numero": "2916",
+          "origem_cidade": "Rio de Janeiro",
+          "origem_sigla": "SDU",
+          "destino_cidade": "Campinas",
+          "destino_sigla": "VCP",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "15:15",
+          "chegada": "16:25"
+        },
+        {
+          "numero": "4239",
+          "origem_cidade": "Campinas",
+          "origem_sigla": "VCP",
+          "destino_cidade": "Cuiabá",
+          "destino_sigla": "CGB",
+          "data": "07/04/2026",
+          "dia_semana": "Terça-feira",
+          "partida": "17:05",
+          "chegada": "18:15"
+        }
+      ],
+      "voo_realocacao": {
+        "numero": "4340",
+        "origem_cidade": "Campinas",
+        "destino_cidade": "Cuiabá",
+        "data": "07/04/2026",
+        "dia_semana": "Terça-feira",
+        "partida": "23:40",
+        "chegada": "00:50"
+      },
+      "chegada_prevista": "18:15",
+      "chegada_real": "00:50",
+      "tempo_atraso": "NaN horas e NaN minutos",
+      "tempo_atraso_simples": "NaNh",
+      "assistencia": [],
+      "perda_compromisso": "profissional",
+      "desc_compromisso": "reunião de trabalho com Seleção Brasileira Feminina",
+      "desc_compromisso_detalhe": "às 22h00 do dia 07/04/2026 no hotel",
+      "gestante_bebe": "nao",
+      "tem_gastos": false,
+      "gastos": [],
+      "valor_morais": "8000",
+      "valor_morais_extenso": "oito mil reais",
+      "valor_alimentacao": "",
+      "valor_passagem": "",
+      "relato": "Voo saindo do Rio atrasou 40 minutos e impossibilitou a conexão em Campinas. Única possibilidade oferecida foi voo às 23:00 para Cuiabá. Ficou mais de 6 horas no aeroporto esperando. Recebeu apenas voucher de pequena refeição. Chegou em Cuiabá 1:00 da madrugada.",
+      "particularidade": "",
+      "id_caso": "251634",
+      "data_peticao": "22/05/2026",
+      "observacoes_internas": ""
+    }
+  }
+]
