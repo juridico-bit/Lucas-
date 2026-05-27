@@ -43,3 +43,8 @@ next-env.d.ts
 
 # backups locais dos templates
 /templates/backup/
+/templates/*.bak
+
+# arquivos de teste gerados localmente
+test-*.docx
+server.log
