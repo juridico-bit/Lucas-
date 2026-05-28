@@ -74,9 +74,6 @@ export default function Home() {
 
       <main className="max-w-6xl mx-auto px-6 py-10">
 
-        {/* Métricas */}
-        <DashboardMetrics />
-
         {/* Módulos */}
         <div className="mb-10">
           <div className="flex items-baseline justify-between mb-6">
@@ -164,6 +161,9 @@ export default function Home() {
             })}
           </div>
         </div>
+
+        {/* Métricas */}
+        <DashboardMetrics />
 
         {/* Histórico */}
         <HistoricoRecente />
