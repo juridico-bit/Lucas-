@@ -259,27 +259,6 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
     setTimeout(() => setFlashGenero(null), 2000);
   }
 
-  function aplicarCorrecaoAutoBlur() {
-    const qual = autor.qualificacao ?? "";
-    if (!qual.trim()) return;
-    // PRIORIDADE: nome (mais confiável) → texto (fallback)
-    const nomeExtraido = qual.trim().split(",")[0]?.trim() ?? "";
-    const genero = (nomeExtraido ? detectarGeneroPeloNome(nomeExtraido) : null)
-      ?? detectarGeneroDoTexto(qual);
-    if (!genero) return;
-    const corrigido = corrigirGeneroQualificacao(qual, genero);
-    if (corrigido === qual) return;
-    const autores = [...(dados.autores ?? [{}])];
-    autores[0] = { ...autores[0], qualificacao: corrigido };
-    upd({ autores });
-    setFlashGenero(genero);
-    setTimeout(() => setFlashGenero(null), 2000);
-  }
-
-  // Extrai nome do início da qualificação para detecção mais precisa
-  const nomeParaGenero = (autor.nome || (autor.qualificacao ?? "").split(",")[0] || "").trim();
-  const generoDetectado = nomeParaGenero ? detectarGeneroPeloNome(nomeParaGenero) : null;
-
   return (
     <div className="space-y-8">
 
@@ -304,32 +283,19 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
                     ✓ Corrigido
                   </span>
                 )}
-                {generoDetectado && !flashGenero && (
-                  <span className="text-[10px] text-gray-400 dark:text-slate-500">
-                    detectado: {generoDetectado === "M" ? "masc." : "fem."}
-                  </span>
-                )}
                 <button
                   type="button"
-                  title="Aplicar forma masculina (remove o '(a)' e ajusta gênero)"
+                  title="Aplicar forma masculina"
                   onClick={() => aplicarCorrecaoGenero("M")}
-                  className={`px-2 py-0.5 text-xs rounded border font-medium transition-colors ${
-                    generoDetectado === "M"
-                      ? "bg-blue-600 text-white border-blue-600 hover:bg-blue-700"
-                      : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-blue-400 hover:text-blue-600"
-                  }`}
+                  className="px-2 py-0.5 text-xs rounded border font-medium transition-colors bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-blue-400 hover:text-blue-600"
                 >
                   ♂ Masc.
                 </button>
                 <button
                   type="button"
-                  title="Aplicar forma feminina (ajusta para '...a')"
+                  title="Aplicar forma feminina"
                   onClick={() => aplicarCorrecaoGenero("F")}
-                  className={`px-2 py-0.5 text-xs rounded border font-medium transition-colors ${
-                    generoDetectado === "F"
-                      ? "bg-pink-500 text-white border-pink-500 hover:bg-pink-600"
-                      : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-pink-400 hover:text-pink-600"
-                  }`}
+                  className="px-2 py-0.5 text-xs rounded border font-medium transition-colors bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-pink-400 hover:text-pink-600"
                 >
                   ♀ Fem.
                 </button>

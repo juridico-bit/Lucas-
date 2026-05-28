@@ -229,28 +229,8 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
   const [erroNasc, setErroNasc] = useState("");
   const [flashGenero, setFlashGenero] = useState<"M" | "F" | null>(null);
 
-  // Extrai nome do início da qualificação (antes da 1ª vírgula) para detecção mais precisa
-  const nomeParaGenero = (autor.nome || (autor.qualificacao ?? "").split(",")[0] || "").trim();
-  const generoDetectado = nomeParaGenero ? detectarGeneroPeloNome(nomeParaGenero) : null;
-
   function aplicarCorrecaoGenero(genero: "M" | "F") {
     const corrigido = corrigirGeneroQualificacao(autor.qualificacao ?? "", genero);
-    onUpdate({ qualificacao: corrigido });
-    setFlashGenero(genero);
-    setTimeout(() => setFlashGenero(null), 2000);
-  }
-
-  function aplicarCorrecaoAutoBlur() {
-    const qual = autor.qualificacao ?? "";
-    if (!qual.trim()) return;
-    // PRIORIDADE: nome (mais confiável) → texto (fallback)
-    // O nome é extraído antes da 1ª vírgula da qualificação
-    const nomeExtraido = qual.trim().split(",")[0]?.trim() ?? "";
-    const genero = (nomeExtraido ? detectarGeneroPeloNome(nomeExtraido) : null)
-      ?? detectarGeneroDoTexto(qual);
-    if (!genero) return;
-    const corrigido = corrigirGeneroQualificacao(qual, genero);
-    if (corrigido === qual) return;
     onUpdate({ qualificacao: corrigido });
     setFlashGenero(genero);
     setTimeout(() => setFlashGenero(null), 2000);
@@ -309,30 +289,17 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
             {flashGenero && (
               <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium animate-pulse">✓ Corrigido</span>
             )}
-            {generoDetectado && !flashGenero && (
-              <span className="text-[10px] text-gray-400 dark:text-slate-500">
-                detectado: {generoDetectado === "M" ? "masc." : "fem."}
-              </span>
-            )}
             <button
               type="button"
               onClick={() => aplicarCorrecaoGenero("M")}
-              className={`px-2 py-0.5 text-xs rounded border font-medium transition-colors ${
-                generoDetectado === "M"
-                  ? "bg-blue-600 text-white border-blue-600 hover:bg-blue-700"
-                  : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-blue-400 hover:text-blue-600"
-              }`}
+              className="px-2 py-0.5 text-xs rounded border font-medium transition-colors bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-blue-400 hover:text-blue-600"
             >
               ♂ Masc.
             </button>
             <button
               type="button"
               onClick={() => aplicarCorrecaoGenero("F")}
-              className={`px-2 py-0.5 text-xs rounded border font-medium transition-colors ${
-                generoDetectado === "F"
-                  ? "bg-pink-500 text-white border-pink-500 hover:bg-pink-600"
-                  : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-pink-400 hover:text-pink-600"
-              }`}
+              className="px-2 py-0.5 text-xs rounded border font-medium transition-colors bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-300 dark:border-slate-600 hover:border-pink-400 hover:text-pink-600"
             >
               ♀ Fem.
             </button>
