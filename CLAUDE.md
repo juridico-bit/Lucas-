@@ -46,6 +46,16 @@ const CATEGORIAS = [
 - **Subtítulo:** `font-bold text-slate-700 dark:text-white` — negrito e branco no dark mode para destacar
 - **Nunca usar travessão `—`** como separador nos títulos dos cards
 
+### Ordem das seções na homepage
+
+```
+1. Módulos       ← sempre primeiro
+2. Dashboard     ← métricas e KPIs
+3. Histórico     ← últimas peças geradas
+```
+
+> **Regra:** Módulos sempre antes do Dashboard — o usuário quer ver as ações disponíveis antes das métricas.
+
 ### Para adicionar nova categoria
 
 Acrescentar novo objeto ao array `CATEGORIAS` em `app/page.tsx`. Nenhum outro arquivo precisa ser alterado.
