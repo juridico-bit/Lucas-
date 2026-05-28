@@ -186,6 +186,10 @@ export async function POST(request: NextRequest) {
 
     const placeholders: Record<string, unknown> = {
       // ── Autores ────────────────────────────────────────────────────────────
+      // Template voo-internacional-1-autor.docx usa {NOME_AUTOR}/{QUALIFICACAO_AUTOR}
+      // sem sufixo numérico. Fornecemos ambas as formas para compatibilidade.
+      NOME_AUTOR: nome1,
+      QUALIFICACAO_AUTOR: qual1Resto,
       NOME_AUTOR1: nome1,
       QUALIFICACAO_AUTOR1: qual1Resto,
       // Autor 2 vazio (template espera os placeholders mas não os exibe para 1 autor)

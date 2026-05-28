@@ -1301,6 +1301,33 @@ Foi adicionada a prop opcional `maxAutores?: number` ao componente. Quando passa
 - Condicionais: `{#tem_compromisso}`, `{#tem_conexao}`, `{#tem_gastos}`, `{#idoso}`, `{#sem_assistencia}`, `{#autor_em_sp}`, `{#autor_fora_sp}`
 - `{~DESC_COMPROMISSO}` — raw OOXML igual ao multi-autor (negrito, Garamond 13pt, recuo)
 - `QUALIFICACAO_AUTOR2` sempre vazio — o template não exibe AUTOR2
+- **⚠️ Placeholders de qualificação SEM sufixo numérico:** `{NOME_AUTOR}` e `{QUALIFICACAO_AUTOR}` (não `{NOME_AUTOR1}`)
+
+### ⚠️ Bug corrigido (28/05/2026): Qualificação em branco no módulo 1 Autor
+
+**Causa raiz:** O template `voo-internacional-1-autor.docx` usa os placeholders `{NOME_AUTOR}` e `{QUALIFICACAO_AUTOR}` (sem sufixo numérico), enquanto o route fornecia apenas `NOME_AUTOR1` e `QUALIFICACAO_AUTOR1`. Os placeholders do template nunca eram substituídos → qualificação aparecia em branco na petição gerada.
+
+**Fix em `app/api/gerar-peca-internacional-1-autor/route.ts`:**
+```typescript
+// Fornece AMBAS as formas para compatibilidade total
+NOME_AUTOR: nome1,          // ← sem sufixo (o template usa esta forma)
+QUALIFICACAO_AUTOR: qual1Resto,
+NOME_AUTOR1: nome1,         // ← com sufixo (retrocompatibilidade)
+QUALIFICACAO_AUTOR1: qual1Resto,
+```
+
+**Regra geral para novos templates 1-autor:**
+Antes de criar a rota, inspecionar os placeholders reais do template:
+```bash
+node -e "
+const PizZip=require('pizzip'),fs=require('fs');
+const zip=new PizZip(fs.readFileSync('templates/SEU-TEMPLATE.docx'));
+const k=Object.keys(zip.files).find(k=>k.includes('document.xml'));
+const m=zip.files[k].asText().match(/\{[~#/]?[A-Z_a-z][^}]{0,60}\}/g)||[];
+console.log([...new Set(m)].join('\n'));
+"
+```
+Se o template usa `{NOME_AUTOR}` → fornecer `NOME_AUTOR` na rota. Se usa `{NOME_AUTOR1}` → fornecer `NOME_AUTOR1`. Sempre fornecer ambas as formas por segurança.
 
 ### API de extração
 
