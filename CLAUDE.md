@@ -279,26 +279,35 @@ Quando o usuário cola a qualificação e sai do campo (onBlur), o sistema detec
 
 ### ⚠️ Bug corrigido (28/05/2026): letras duplicadas — "Brasileiraa", "casadaa"
 
-**Causa raiz:** A função `corrigirGeneroQualificacao` rodava as substituições de pares **antes** de processar os padrões `(a)`. Quando o usuário colava texto no formato neutro do Resolvvi (`"Brasileiro(a), engenheiro(a), casado(a)"`):
+**Causa raiz (dupla):**
 
-1. Substituição de par: `\bbrasileiro\b` encontrava "Brasileiro" em "Brasileiro(a)" (o `(` é não-`\w`, então `\b` existe antes do `(`!) → substituía por "Brasileira" → texto ficava "Brasileira(a)"
-2. Remoção de `(a)`: `\s*(a)` encontrava "(a)" em "Brasileira(a)" → substituía por "a" → resultado: **"Brasileiraa"** ❌
+**Problema 1 — ordem errada:** A função `corrigirGeneroQualificacao` rodava as substituições de pares **antes** de processar os padrões `(a)`. Com texto `"Brasileiro(a)"`:
+1. Par: `\bbrasileiro\b` encontrava "Brasileiro" em "Brasileiro(a)" (o `(` é não-`\w`, então `\b` existe antes!) → "Brasileira(a)"
+2. Catch-all `(a)`: "(a)" → "a" → **"Brasileiraa"** ❌
 
-**Fix:** Mover processamento de `(a)` para **antes** das substituições de pares em ambos os arquivos:
+**Problema 2 — catch-all sem guarda para 'a':** Mesmo após reordenar, o catch-all `r.replace(/\s*\(a\)/g, "a")` ainda duplicava quando o texto JÁ estava na forma feminina com marcador `(a)`, ex: `"Brasileira(a)"` → `"Brasileiraa"` ❌
+
+**Fix definitivo — ordem das substituições para `genero === "F"` (em ambos os arquivos):**
 
 ```typescript
-// ORDEM CORRETA (em ambos os arquivos):
-// 1. Resolve (a) primeiro
-if (genero === "F") {
-  r = r.replace(/o\s*\(a\)/gi, "a");   // "Brasileiro(a)" → "Brasileira"
-  r = r.replace(/\s*\(a\)/g, "a");
-} else { ... }
+// 1. Resolve (a) ANTES das substituições de pares
+// 2. Guarda para forma feminina já existente:
+r = r.replace(/a\s*\(a\)/gi, "a");   // "Brasileira(a)" → "Brasileira" (só remove marcador)
+r = r.replace(/o\s*\(a\)/gi, "a");   // "Brasileiro(a)" → "Brasileira" (masc → fem)
+r = r.replace(/\s*\(a\)/g, "a");     // "engenheir(a)" → "engenheira" (demais casos)
 
-// 2. Depois, substitui pares (agora o texto já está sem "(a)")
+// 3. Só então substitui pares (texto já sem marcadores)
 for (const [masc, fem] of PARES_GENERO) { ... }
 ```
 
-Com essa ordem, "Brasileiro(a)" → "Brasileira" antes que o loop de pares rode → sem colisão.
+**Todos os formatos tratados corretamente:**
+| Entrada | Saída (F) |
+|---|---|
+| `"Brasileiro(a)"` | `"Brasileira"` ✓ |
+| `"Brasileira(a)"` | `"Brasileira"` ✓ (sem duplo 'a') |
+| `"engenheir(a)"` | `"engenheira"` ✓ |
+| `"Brasileira"` | `"Brasileira"` ✓ (sem alteração) |
+| `"Brasileiro"` | `"Brasileira"` ✓ |
 
 **Arquivos corrigidos:** `components/AbaQualificacao.tsx` e `components/AbaQualificacaoInternacional.tsx`
 
