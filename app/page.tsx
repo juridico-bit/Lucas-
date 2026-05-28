@@ -130,7 +130,7 @@ export default function Home() {
                         <h4 className="font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 transition-colors text-sm leading-tight">
                           {m.titulo}
                           {m.subtitulo && (
-                            <span className="ml-1.5 text-xs font-normal text-slate-400 dark:text-slate-500">
+                            <span className="ml-1.5 text-xs font-bold text-slate-700 dark:text-white">
                               — {m.subtitulo}
                             </span>
                           )}
