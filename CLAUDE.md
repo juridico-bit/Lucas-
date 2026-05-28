@@ -245,6 +245,19 @@ Quando um bloco condicional como `{#tem_gastos}` está **dentro do texto** de um
 
 **Se esse bug reaparecer após troca de template:** verificar no XML do template se `{#tem_gastos}` e `{/tem_gastos}` estão em parágrafos próprios (não misturados com texto de títulos com fundo/shading). Usar o script de inspeção em `scripts/fix-autor-foro-tags.js` como referência.
 
+## Campo Data de Nascimento — Regra de Preenchimento
+
+O campo "Data de nascimento" na aba Qualificação **não é obrigatório** — só deve ser preenchido se o sistema alertar que o autor é idoso.
+
+Texto informativo exibido abaixo do campo em ambos os módulos (nacional e internacional):
+> *ℹ️ Preencha somente se o sistema avisar que o autor é idoso (≥ 60 anos).*
+
+**Arquivos:** `components/AbaQualificacao.tsx` e `components/AbaQualificacaoInternacional.tsx`
+
+**Por que importa:** a data de nascimento só afeta a sugestão de danos morais (acréscimo de R$ 1.000 para idosos) e o condicional `{#idoso}` do template. Se o campo ficar vazio, o sistema funciona normalmente — sem acréscimo e sem condicional.
+
+---
+
 ## Companhias Suportadas
 
 **Nacionais (`CompanhiaKey`):** `LATAM`, `GOL`, `AZUL`
