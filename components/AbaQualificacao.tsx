@@ -408,6 +408,9 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
             <p className="mt-1 text-[10px] text-gray-400 dark:text-slate-500">
               Digite manualmente ou envie uma foto do RG, CNH ou outro documento para extração automática.
             </p>
+            <p className="mt-1 text-[11px] text-slate-400 dark:text-slate-500 leading-snug">
+              ℹ️ Preencha somente se o sistema avisar que o autor é idoso (≥ 60 anos).
+            </p>
           </div>
 
           {/* Situação de vulnerabilidade */}
