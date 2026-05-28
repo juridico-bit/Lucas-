@@ -91,7 +91,20 @@ function corrigirGeneroQualificacao(texto: string, genero: "M" | "F"): string {
   if (!texto.trim()) return texto;
   let r = texto;
 
-  // Substitui pares de palavras gendrificadas
+  // 1. PRIMEIRO: resolver padrões "(a)" antes das substituições de pares.
+  // Motivo: "Brasileiro(a)" → par substitui "Brasileiro" → "Brasileira(a)" →
+  // depois (a) vira "a" → "Brasileiraa". A ordem correta evita esse duplo "a".
+  if (genero === "M") {
+    // o(a) → o  |  (a) → remove
+    r = r.replace(/o\s*\(a\)/gi, "o");
+    r = r.replace(/\s*\(a\)/g, "");
+  } else {
+    // o(a) → a  |  (a) → a
+    r = r.replace(/o\s*\(a\)/gi, "a");
+    r = r.replace(/\s*\(a\)/g, "a");
+  }
+
+  // 2. DEPOIS: substituir pares de palavras gendrificadas
   for (const [masc, fem] of PARES_GENERO) {
     const [from, to] = genero === "M" ? [fem, masc] : [masc, fem];
     r = r.replace(
@@ -101,16 +114,6 @@ function corrigirGeneroQualificacao(texto: string, genero: "M" | "F"): string {
           ? to.charAt(0).toUpperCase() + to.slice(1)
           : to
     );
-  }
-
-  if (genero === "M") {
-    // o(a) → o  |  (a) → remove
-    r = r.replace(/o\s*\(a\)/gi, "o");
-    r = r.replace(/\s*\(a\)/g, "");
-  } else {
-    // o(a) → a  |  (a) → a
-    r = r.replace(/o\s*\(a\)/gi, "a");
-    r = r.replace(/\s*\(a\)/g, "a");
   }
 
   // Lowercase primeira letra da profissão (3.ª segmento separado por vírgula)

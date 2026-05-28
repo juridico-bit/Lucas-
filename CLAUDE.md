@@ -245,6 +245,69 @@ Quando um bloco condicional como `{#tem_gastos}` está **dentro do texto** de um
 
 **Se esse bug reaparecer após troca de template:** verificar no XML do template se `{#tem_gastos}` e `{/tem_gastos}` estão em parágrafos próprios (não misturados com texto de títulos com fundo/shading). Usar o script de inspeção em `scripts/fix-autor-foro-tags.js` como referência.
 
+## Correção Automática de Gênero na Qualificação (28/05/2026)
+
+Quando o usuário cola a qualificação e sai do campo (onBlur), o sistema detecta o gênero e corrige automaticamente as palavras gendrificadas.
+
+### Prioridade de detecção (IMPORTANTE)
+
+```
+1º NOME (antes da 1ª vírgula) → mais confiável
+2º TEXTO (palavras gendrificadas no corpo) → fallback
+```
+
+> **Por que essa ordem importa:** se o usuário cola "Ana Carolina, Brasileiro, engenheiro, casado...", o texto contém palavras masculinas mas o nome é feminino. Com a ordem antiga (texto primeiro), o sistema detectava "M" errado. Com a nova ordem, o nome "Ana" → "F" → corrige tudo para "Brasileira, engenheira, casada".
+
+### Dicionário de gênero — `PARES_GENERO`
+
+**Localização:** `components/AbaQualificacao.tsx` e `components/AbaQualificacaoInternacional.tsx` (cópias idênticas).
+
+| Categoria | Pares incluídos |
+|---|---|
+| Nacionalidade | brasileiro/a, estrangeiro/a, americano/a, italiano/a, argentino/a, português/portuguesa, espanhol/a, francês/francesa, alemão/alemã |
+| Estado civil | casado/a, solteiro/a, divorciado/a, separado/a, viúvo/a, companheiro/a |
+| Profissões | engenheiro/a, advogado/a, médico/a, professor/a, empresário/a, aposentado/a, servidor/a, funcionário/a, técnico/a, contador/a, arquiteto/a, psicólogo/a, enfermeiro/a, administrador/a, programador/a, autônomo/a |
+| Outros | nascido/a, domiciliado/a, inscrito/a, portador/a, homem/mulher |
+
+**Para adicionar nova profissão:** incluir `["masc", "fem"]` no array `PARES_GENERO` nos **dois arquivos**.
+
+### Heurística de nome (`detectarGeneroPeloNome`)
+
+- Primeiro nome termina em `"a"` → feminino
+- Exceções masculinas: `luca, icaro, ícaro, nikita, elijah, josua, yura`
+- Qualquer outro → masculino (padrão)
+
+### ⚠️ Bug corrigido (28/05/2026): letras duplicadas — "Brasileiraa", "casadaa"
+
+**Causa raiz:** A função `corrigirGeneroQualificacao` rodava as substituições de pares **antes** de processar os padrões `(a)`. Quando o usuário colava texto no formato neutro do Resolvvi (`"Brasileiro(a), engenheiro(a), casado(a)"`):
+
+1. Substituição de par: `\bbrasileiro\b` encontrava "Brasileiro" em "Brasileiro(a)" (o `(` é não-`\w`, então `\b` existe antes do `(`!) → substituía por "Brasileira" → texto ficava "Brasileira(a)"
+2. Remoção de `(a)`: `\s*(a)` encontrava "(a)" em "Brasileira(a)" → substituía por "a" → resultado: **"Brasileiraa"** ❌
+
+**Fix:** Mover processamento de `(a)` para **antes** das substituições de pares em ambos os arquivos:
+
+```typescript
+// ORDEM CORRETA (em ambos os arquivos):
+// 1. Resolve (a) primeiro
+if (genero === "F") {
+  r = r.replace(/o\s*\(a\)/gi, "a");   // "Brasileiro(a)" → "Brasileira"
+  r = r.replace(/\s*\(a\)/g, "a");
+} else { ... }
+
+// 2. Depois, substitui pares (agora o texto já está sem "(a)")
+for (const [masc, fem] of PARES_GENERO) { ... }
+```
+
+Com essa ordem, "Brasileiro(a)" → "Brasileira" antes que o loop de pares rode → sem colisão.
+
+**Arquivos corrigidos:** `components/AbaQualificacao.tsx` e `components/AbaQualificacaoInternacional.tsx`
+
+### Botões manuais ♂ / ♀
+
+Permanecem visíveis para o usuário forçar correção quando a heurística errar (nomes ambíguos como "Alex", "Ariel", etc.).
+
+---
+
 ## Campo Data de Nascimento — Regra de Preenchimento
 
 O campo "Data de nascimento" na aba Qualificação **não é obrigatório** — só deve ser preenchido se o sistema alertar que o autor é idoso.
