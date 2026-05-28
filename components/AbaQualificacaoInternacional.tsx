@@ -119,6 +119,10 @@ function corrigirGeneroQualificacao(texto: string, genero: "M" | "F"): string {
     );
   }
 
+  // 3. Proteção final: elimina vogal duplicada ao fim de palavra ("casadaa" → "casada")
+  r = r.replace(/([aeiou])\1\b/gi, "$1");
+
+  // 4. Lowercase primeira letra da profissão (3.ª segmento separado por vírgula)
   const partes = r.split(",");
   if (partes.length >= 3) {
     partes[2] = partes[2].replace(
