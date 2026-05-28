@@ -337,7 +337,6 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
         <textarea
           value={autor.qualificacao ?? ""}
           onChange={(e) => onUpdate({ qualificacao: e.target.value })}
-          onBlur={aplicarCorrecaoAutoBlur}
           rows={3}
           className={`${inputBase} border-gray-300 dark:border-slate-600${validarCampos && !autor.qualificacao?.trim() ? " border-red-400 dark:border-red-600 ring-1 ring-red-300" : ""}`}
           placeholder="Nome completo, nacionalidade, profissão, estado civil, inscrito no CPF sob o nº, portador do RG sob o nº, endereço completo..."

@@ -339,13 +339,12 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
                 autores[0] = { ...autores[0], qualificacao: e.target.value };
                 upd({ autores });
               }}
-              onBlur={aplicarCorrecaoAutoBlur}
               rows={4}
               className={`${inputBase} border-gray-300${validarCampos && !autor.qualificacao?.trim() ? " border-red-400 dark:border-red-600 ring-1 ring-red-300" : ""}`}
               placeholder="Nome completo, nacionalidade, profissão, estado civil, inscrito no CPF sob o nº, portador do RG sob o nº, endereço completo..."
             />
             <p className="mt-0.5 text-[10px] text-gray-400 dark:text-slate-500">
-              O gênero é ajustado automaticamente ao sair do campo. Use os botões para forçar manualmente.
+              Cole a qualificação exatamente como está na procuração. Use os botões ♂/♀ para corrigir o gênero se necessário.
             </p>
           </div>
 
