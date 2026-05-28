@@ -210,17 +210,24 @@ A IA pode retornar o nome fantasia ("ITA Airways") em vez da chave ("ITA"). Dois
 - API de geração: `POST /api/gerar-peca-internacional`
 - Template: `templates/voo-internacional-multi-autor.docx`
 
-### Formatação da qualificação entre múltiplos autores
+### ⚠️ REGRA OBRIGATÓRIA: Qualificação NUNCA tem ponto final (28/05/2026)
 
-**Regra:** o autor que NÃO for o último **não deve ter ponto final** na qualificação — o template já insere `" e "` (ou `", "`) entre os autores. Ponto + "e" gera `"...São Paulo. e Maria"`, que está errado.
+O ponto final da qualificação (`QUALIFICACAO_AUTOR`, `QUALIFICACAO_CIVIL`) deve ser **sempre removido** em todos os routes de geração. O template já tem vírgula ou continuação de texto após o placeholder — ponto + vírgula gera `"...Pará., vem"`, que está errado.
 
-**Implementado em `gerar-peca-internacional/route.ts`:**
+**Aplicado nos 3 routes:**
+
 ```typescript
-const isUltimoAutor = i === autores.length - 1;
-placeholdersAutores[`QUALIFICACAO_AUTOR${n}`] = isUltimoAutor
-  ? restoComVirgula                        // último autor: mantém ponto
-  : restoComVirgula.replace(/\.\s*$/, ""); // demais: remove ponto final
+// gerar-peca/route.ts (nacional)
+const qualificacaoSemNome = (...).replace(/\.\s*$/, "");
+
+// gerar-peca-internacional/route.ts (multi-autor) — todos os autores
+placeholdersAutores[`QUALIFICACAO_AUTOR${n}`] = restoComVirgula.replace(/\.\s*$/, "");
+
+// gerar-peca-internacional-1-autor/route.ts (1 autor)
+const qual1Resto = qual1RestoRaw.replace(/\.\s*$/, "");
 ```
+
+> Regra anterior dizia "remove ponto só para autores não-últimos" — **errada**. Corrigida: remove sempre, todos os autores, todos os módulos.
 
 ## Botão de Confirmação em AbaFormulario
 

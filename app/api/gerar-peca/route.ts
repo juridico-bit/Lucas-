@@ -87,7 +87,8 @@ export async function POST(request: NextRequest) {
     // Extrai nome (antes da 1ª vírgula) — negrito no template
     const primeiraVirgula = qualificacaoLimpa.indexOf(",");
     const nomeAutor = primeiraVirgula === -1 ? qualificacaoLimpa : qualificacaoLimpa.slice(0, primeiraVirgula).trim();
-    const qualificacaoSemNome = primeiraVirgula === -1 ? "" : qualificacaoLimpa.slice(primeiraVirgula);
+    // Remove ponto final — o template já tem vírgula/continuação após o placeholder
+    const qualificacaoSemNome = (primeiraVirgula === -1 ? "" : qualificacaoLimpa.slice(primeiraVirgula)).replace(/\.\s*$/, "");
 
     const placeholders: Record<string, string> = {
       NOME_AUTOR: nomeAutor,

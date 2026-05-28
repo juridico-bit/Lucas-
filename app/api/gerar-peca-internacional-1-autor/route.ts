@@ -172,7 +172,9 @@ export async function POST(request: NextRequest) {
       .replace(/[\r\n]+/g, " ")
       .replace(/\s{2,}/g, " ")
       .trim();
-    const { nome: nome1, restoComVirgula: qual1Resto } = extrairNomeDeQualificacao(qualLimpa1);
+    const { nome: nome1, restoComVirgula: qual1RestoRaw } = extrairNomeDeQualificacao(qualLimpa1);
+    // Remove ponto final — o template já tem vírgula/continuação após o placeholder
+    const qual1Resto = qual1RestoRaw.replace(/\.\s*$/, "");
 
     // ── Condicionais para docxtemplater ──────────────────────────────────────
     const algumIdoso = autores.some((a) => a.idoso);

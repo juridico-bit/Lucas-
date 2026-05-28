@@ -205,11 +205,8 @@ export async function POST(request: NextRequest) {
         .trim();
       const { nome: nomeExtraido, restoComVirgula } = extrairNomeDeQualificacao(ql);
       placeholdersAutores[`NOME_AUTOR${n}`] = nomeExtraido;
-      // Remove ponto final de autores que não são o último (para evitar "...SP. e João")
-      const isUltimoAutor = i === autores.length - 1;
-      placeholdersAutores[`QUALIFICACAO_AUTOR${n}`] = isUltimoAutor
-        ? restoComVirgula
-        : restoComVirgula.replace(/\.\s*$/, "");
+      // Remove ponto final sempre — o template já tem vírgula/continuação após o placeholder
+      placeholdersAutores[`QUALIFICACAO_AUTOR${n}`] = restoComVirgula.replace(/\.\s*$/, "");
       if (i < autores.length) nomesExtraidos.push(nomeExtraido);
     }
 
