@@ -245,18 +245,15 @@ Quando um bloco condicional como `{#tem_gastos}` está **dentro do texto** de um
 
 **Se esse bug reaparecer após troca de template:** verificar no XML do template se `{#tem_gastos}` e `{/tem_gastos}` estão em parágrafos próprios (não misturados com texto de títulos com fundo/shading). Usar o script de inspeção em `scripts/fix-autor-foro-tags.js` como referência.
 
-## Correção Automática de Gênero na Qualificação (28/05/2026)
+## Gênero na Qualificação — Comportamento (28/05/2026)
 
-Quando o usuário cola a qualificação e sai do campo (onBlur), o sistema detecta o gênero e corrige automaticamente as palavras gendrificadas.
+**A qualificação fica EXATAMENTE como o usuário cola.** Não há correção automática de gênero ao sair do campo (onBlur foi removido).
 
-### Prioridade de detecção (IMPORTANTE)
+**Motivo:** o sistema estava alterando o texto sem permissão do usuário, gerando erros como "Brasileiraa". O Dr. Lucas prefere colar a qualificação do Resolvvi e controlar manualmente.
 
-```
-1º NOME (antes da 1ª vírgula) → mais confiável
-2º TEXTO (palavras gendrificadas no corpo) → fallback
-```
+### Botões manuais ♂ / ♀ (ainda disponíveis)
 
-> **Por que essa ordem importa:** se o usuário cola "Ana Carolina, Brasileiro, engenheiro, casado...", o texto contém palavras masculinas mas o nome é feminino. Com a ordem antiga (texto primeiro), o sistema detectava "M" errado. Com a nova ordem, o nome "Ana" → "F" → corrige tudo para "Brasileira, engenheira, casada".
+Os botões permanecem visíveis para o usuário **aplicar manualmente** se quiser. Eles usam a função `aplicarCorrecaoGenero(genero)` que chama `corrigirGeneroQualificacao`.
 
 ### Dicionário de gênero — `PARES_GENERO`
 
