@@ -1259,6 +1259,55 @@ confirmarRevisaoExpressa() → setAba("revisao")
 
 ---
 
+## Módulo Voo Internacional — 1 Autor (28/05/2026)
+
+Módulo dedicado a casos com **somente 1 autor** em voos internacionais. Usa template próprio com estrutura simplificada — sem loop de autores, sem seções condicionais de pluralização.
+
+### Arquivos
+
+| Arquivo | Função |
+|---|---|
+| `app/voo-internacional-1-autor/page.tsx` | Página do módulo (4 abas idênticas ao multi-autor, sem botão "Adicionar autor") |
+| `app/api/gerar-peca-internacional-1-autor/route.ts` | Route de geração — usa `voo-internacional-1-autor.docx` |
+| `templates/voo-internacional-1-autor.docx` | Template Word com 70 placeholders para 1 autor |
+
+### Diferenças em relação ao módulo multi-autor (`/voo-internacional`)
+
+| Aspecto | Multi-autor | 1 Autor |
+|---|---|---|
+| `RASCUNHO_KEY` | `"rascunho_voo_internacional"` | `"rascunho_voo_internacional_1_autor"` |
+| `modulo` no histórico | `"Voo Internacional"` | `"Voo Internacional — 1 Autor"` |
+| API de geração | `/api/gerar-peca-internacional` | `/api/gerar-peca-internacional-1-autor` |
+| Template | `voo-internacional-multi-autor.docx` | `voo-internacional-1-autor.docx` |
+| `numAutores` | `autores.length` | `1` (fixo) |
+| `valorMoraisTotal` | `valorMoraisPorAutor × numAutores` | `= valorMoraisPorAutor` (sem multiplicação) |
+| `NOME_AUTOR2` / `QUALIFICACAO_AUTOR2` | dados do autor 2 | `""` (vazios) |
+| `NOMES_AUTORES` | `"João e Maria"` | apenas o nome do autor 1 |
+| `NUM_AUTORES` | `String(autores.length)` | `"1"` |
+| Nome do arquivo gerado | `Inicial Internacional - João e Maria.docx` | `Inicial Internacional - João.docx` |
+| Botão "Adicionar autor" | Visível (até 5 autores) | Oculto via `maxAutores={1}` |
+| Template fallback `-novo` | Sim (verifica `-novo` primeiro) | Não — só `voo-internacional-1-autor.docx` |
+
+### Prop `maxAutores` em `AbaQualificacaoInternacional`
+
+Foi adicionada a prop opcional `maxAutores?: number` ao componente. Quando passada:
+- Substitui `MAX_AUTORES` (5) pelo valor fornecido no cabeçalho "N de X máx."
+- O botão "+ Adicionar autor" fica desabilitado quando `autores.length >= maxAutores`
+- O módulo 1 autor passa `maxAutores={1}`, efetivamente ocultando o botão desde o início
+
+### Template `voo-internacional-1-autor.docx`
+
+- 70 placeholders — mesmos do template multi-autor, mas com textos singulares (sem "autores", "os requerentes", etc.)
+- Condicionais: `{#tem_compromisso}`, `{#tem_conexao}`, `{#tem_gastos}`, `{#idoso}`, `{#sem_assistencia}`, `{#autor_em_sp}`, `{#autor_fora_sp}`
+- `{~DESC_COMPROMISSO}` — raw OOXML igual ao multi-autor (negrito, Garamond 13pt, recuo)
+- `QUALIFICACAO_AUTOR2` sempre vazio — o template não exibe AUTOR2
+
+### API de extração
+
+O módulo 1 autor reutiliza `/api/extrair-dados-internacional` (mesmo endpoint do multi-autor). A extração retorna normalmente; a page.tsx simplesmente ignora autores adicionais que a IA eventualmente detecte — o `DADOS_INICIAIS.autores` tem apenas 1 elemento e o componente `AbaQualificacaoInternacional` com `maxAutores={1}` impede adição de novos.
+
+---
+
 ## Observações de Deploy
 
 - `ANTHROPIC_API_KEY` obrigatório no `.env.local`

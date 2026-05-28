@@ -165,6 +165,7 @@ interface Props {
   onChange: (dados: DadosFormulario) => void;
   camposIA: string[];
   validarCampos?: boolean;
+  maxAutores?: number;
 }
 
 // ─── Card de um autor ─────────────────────────────────────────────────────────
@@ -379,9 +380,10 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
 }
 
 // ─── Componente principal ─────────────────────────────────────────────────────
-export default function AbaQualificacaoInternacional({ dados, onChange, validarCampos }: Props) {
+export default function AbaQualificacaoInternacional({ dados, onChange, validarCampos, maxAutores }: Props) {
   const upd = (patch: Partial<DadosFormulario>) => onChange({ ...dados, ...patch });
   const autores = dados.autores ?? [{ ...AUTOR_VAZIO }];
+  const limiteAutores = maxAutores ?? MAX_AUTORES;
 
   function updateAutor(idx: number, patch: Partial<DadosFormulario["autores"][0]>) {
     const novo = [...autores];
@@ -390,7 +392,7 @@ export default function AbaQualificacaoInternacional({ dados, onChange, validarC
   }
 
   function addAutor() {
-    if (autores.length >= MAX_AUTORES) return;
+    if (autores.length >= limiteAutores) return;
     const novo = [...autores, { ...AUTOR_VAZIO }];
     upd({ autores: novo, num_autores: novo.length });
   }
@@ -421,13 +423,13 @@ export default function AbaQualificacaoInternacional({ dados, onChange, validarC
           <h3 className="font-semibold text-gray-800 dark:text-slate-100">
             Autores
             <span className="ml-2 text-xs font-normal text-slate-400">
-              {autores.length} de {MAX_AUTORES} máx.
+              {autores.length} de {limiteAutores} máx.
             </span>
           </h3>
           <button
             type="button"
             onClick={addAutor}
-            disabled={autores.length >= MAX_AUTORES}
+            disabled={autores.length >= limiteAutores}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-semibold rounded-lg transition-colors"
           >
             + Adicionar autor

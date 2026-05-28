@@ -13,6 +13,14 @@ const MODULOS_ATIVOS = [
     tag: "Disponível",
   },
   {
+    titulo: "Voo Internacional — 1 Autor",
+    subtitulo: "",
+    descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 1 autor",
+    href: "/voo-internacional-1-autor",
+    icone: "🌐",
+    tag: "Disponível",
+  },
+  {
     titulo: "Voo Internacional",
     subtitulo: "(2 ou mais autores)",
     descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 2 ou mais autores",
