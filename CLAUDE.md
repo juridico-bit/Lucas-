@@ -245,15 +245,25 @@ Quando um bloco condicional como `{#tem_gastos}` está **dentro do texto** de um
 
 **Se esse bug reaparecer após troca de template:** verificar no XML do template se `{#tem_gastos}` e `{/tem_gastos}` estão em parágrafos próprios (não misturados com texto de títulos com fundo/shading). Usar o script de inspeção em `scripts/fix-autor-foro-tags.js` como referência.
 
-## Gênero na Qualificação — Comportamento (28/05/2026)
+## Gênero na Qualificação — Comportamento Definitivo (28/05/2026)
 
-**A qualificação fica EXATAMENTE como o usuário cola.** Não há correção automática de gênero ao sair do campo (onBlur foi removido).
+**Regra:** A qualificação fica EXATAMENTE como o usuário cola. Nenhuma alteração automática.
 
-**Motivo:** o sistema estava alterando o texto sem permissão do usuário, gerando erros como "Brasileiraa". O Dr. Lucas prefere colar a qualificação do Resolvvi e controlar manualmente.
+**Como funciona:**
+- Usuário cola o texto da procuração/Resolvvi → campo não muda nada
+- Se quiser corrigir o gênero → clica ♂ Masc. ou ♀ Fem. → sistema corrige sem repetir letras
+- **NÃO há onBlur automático** — foi removido porque modificava o texto sem permissão
 
-### Botões manuais ♂ / ♀ (ainda disponíveis)
+**Por que não auto-corrigir:** o Dr. Lucas controla manualmente quando e se quer corrigir o gênero.
 
-Os botões permanecem visíveis para o usuário **aplicar manualmente** se quiser. Eles usam a função `aplicarCorrecaoGenero(genero)` que chama `corrigirGeneroQualificacao`.
+### Botões manuais ♂ / ♀
+
+O usuário clica quando quiser. A função `corrigirGeneroQualificacao` tem 4 etapas garantindo que nunca repita letra:
+1. `a(a)` → `a` — "Brasileira(a)" → "Brasileira"
+2. `o(a)` → `a` — "Brasileiro(a)" → "Brasileira"
+3. `(a)` → `a` — "engenheir(a)" → "engenheira"
+4. Pares masculino↔feminino
+5. **Proteção final:** `/([aeiou])\1\b/` → `$1` — limpa qualquer vogal duplicada residual ao fim de palavra
 
 ### Dicionário de gênero — `PARES_GENERO`
 
