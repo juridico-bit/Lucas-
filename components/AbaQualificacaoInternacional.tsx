@@ -23,21 +23,51 @@ const MAX_AUTORES = 5;
 
 /** Pares [masculino, feminino] para substituição automática */
 const PARES_GENERO: Array<[string, string]> = [
-  ["homem",       "mulher"],
-  ["brasileiro",  "brasileira"],
-  ["estrangeiro", "estrangeira"],
-  ["americano",   "americana"],
-  ["italiano",    "italiana"],
-  ["argentino",   "argentina"],
-  ["português",   "portuguesa"],
-  ["casado",      "casada"],
-  ["solteiro",    "solteira"],
-  ["divorciado",  "divorciada"],
-  ["separado",    "separada"],
-  ["nascido",     "nascida"],
-  ["domiciliado", "domiciliada"],
-  ["inscrito",    "inscrita"],
-  ["portador",    "portadora"],
+  // Nacionalidade / origem
+  ["homem",           "mulher"],
+  ["brasileiro",      "brasileira"],
+  ["estrangeiro",     "estrangeira"],
+  ["americano",       "americana"],
+  ["italiano",        "italiana"],
+  ["argentino",       "argentina"],
+  ["português",       "portuguesa"],
+  ["espanhol",        "espanhola"],
+  ["francês",         "francesa"],
+  ["alemão",          "alemã"],
+  // Estado civil
+  ["casado",          "casada"],
+  ["solteiro",        "solteira"],
+  ["divorciado",      "divorciada"],
+  ["separado",        "separada"],
+  ["viúvo",           "viúva"],
+  ["companheiro",     "companheira"],
+  // Profissões
+  ["engenheiro",      "engenheira"],
+  ["advogado",        "advogada"],
+  ["médico",          "médica"],
+  ["professor",       "professora"],
+  ["empresário",      "empresária"],
+  ["aposentado",      "aposentada"],
+  ["servidor",        "servidora"],
+  ["funcionário",     "funcionária"],
+  ["técnico",         "técnica"],
+  ["contador",        "contadora"],
+  ["arquiteto",       "arquiteta"],
+  ["psicólogo",       "psicóloga"],
+  ["enfermeiro",      "enfermeira"],
+  ["administrador",   "administradora"],
+  ["programador",     "programadora"],
+  ["analista",        "analista"],
+  ["comerciante",     "comerciante"],
+  ["autônomo",        "autônoma"],
+  ["aposentado",      "aposentada"],
+  ["estudante",       "estudante"],
+  // Outros
+  ["nascido",         "nascida"],
+  ["domiciliado",     "domiciliada"],
+  ["inscrito",        "inscrita"],
+  ["portador",        "portadora"],
+  ["residente",       "residente"],
 ];
 
 /** Detecta gênero a partir das palavras presentes no texto de qualificação */
@@ -188,7 +218,9 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
   const [erroNasc, setErroNasc] = useState("");
   const [flashGenero, setFlashGenero] = useState<"M" | "F" | null>(null);
 
-  const generoDetectado = autor.nome ? detectarGeneroPeloNome(autor.nome) : null;
+  // Extrai nome do início da qualificação (antes da 1ª vírgula) para detecção mais precisa
+  const nomeParaGenero = (autor.nome || (autor.qualificacao ?? "").split(",")[0] || "").trim();
+  const generoDetectado = nomeParaGenero ? detectarGeneroPeloNome(nomeParaGenero) : null;
 
   function aplicarCorrecaoGenero(genero: "M" | "F") {
     const corrigido = corrigirGeneroQualificacao(autor.qualificacao ?? "", genero);
@@ -200,7 +232,11 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
   function aplicarCorrecaoAutoBlur() {
     const qual = autor.qualificacao ?? "";
     if (!qual.trim()) return;
-    const genero = detectarGeneroDoTexto(qual) ?? (autor.nome ? detectarGeneroPeloNome(autor.nome) : null);
+    // PRIORIDADE: nome (mais confiável) → texto (fallback)
+    // O nome é extraído antes da 1ª vírgula da qualificação
+    const nomeExtraido = qual.trim().split(",")[0]?.trim() ?? "";
+    const genero = (nomeExtraido ? detectarGeneroPeloNome(nomeExtraido) : null)
+      ?? detectarGeneroDoTexto(qual);
     if (!genero) return;
     const corrigido = corrigirGeneroQualificacao(qual, genero);
     if (corrigido === qual) return;

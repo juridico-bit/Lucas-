@@ -18,21 +18,47 @@ function formatarCPF(raw: string): string {
 
 /** Pares [masculino, feminino] para substituição automática */
 const PARES_GENERO: Array<[string, string]> = [
-  ["homem",       "mulher"],
-  ["brasileiro",  "brasileira"],
-  ["estrangeiro", "estrangeira"],
-  ["americano",   "americana"],
-  ["italiano",    "italiana"],
-  ["argentino",   "argentina"],
-  ["português",   "portuguesa"],
-  ["casado",      "casada"],
-  ["solteiro",    "solteira"],
-  ["divorciado",  "divorciada"],
-  ["separado",    "separada"],
-  ["nascido",     "nascida"],
-  ["domiciliado", "domiciliada"],
-  ["inscrito",    "inscrita"],
-  ["portador",    "portadora"],
+  // Nacionalidade / origem
+  ["homem",           "mulher"],
+  ["brasileiro",      "brasileira"],
+  ["estrangeiro",     "estrangeira"],
+  ["americano",       "americana"],
+  ["italiano",        "italiana"],
+  ["argentino",       "argentina"],
+  ["português",       "portuguesa"],
+  ["espanhol",        "espanhola"],
+  ["francês",         "francesa"],
+  ["alemão",          "alemã"],
+  // Estado civil
+  ["casado",          "casada"],
+  ["solteiro",        "solteira"],
+  ["divorciado",      "divorciada"],
+  ["separado",        "separada"],
+  ["viúvo",           "viúva"],
+  ["companheiro",     "companheira"],
+  // Profissões
+  ["engenheiro",      "engenheira"],
+  ["advogado",        "advogada"],
+  ["médico",          "médica"],
+  ["professor",       "professora"],
+  ["empresário",      "empresária"],
+  ["aposentado",      "aposentada"],
+  ["servidor",        "servidora"],
+  ["funcionário",     "funcionária"],
+  ["técnico",         "técnica"],
+  ["contador",        "contadora"],
+  ["arquiteto",       "arquiteta"],
+  ["psicólogo",       "psicóloga"],
+  ["enfermeiro",      "enfermeira"],
+  ["administrador",   "administradora"],
+  ["programador",     "programadora"],
+  ["autônomo",        "autônoma"],
+  // Outros
+  ["nascido",         "nascida"],
+  ["domiciliado",     "domiciliada"],
+  ["inscrito",        "inscrita"],
+  ["portador",        "portadora"],
+  ["residente",       "residente"],
 ];
 
 /** Detecta gênero a partir das palavras presentes no texto de qualificação */
@@ -227,7 +253,10 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
   function aplicarCorrecaoAutoBlur() {
     const qual = autor.qualificacao ?? "";
     if (!qual.trim()) return;
-    const genero = detectarGeneroDoTexto(qual) ?? (autor.nome ? detectarGeneroPeloNome(autor.nome) : null);
+    // PRIORIDADE: nome (mais confiável) → texto (fallback)
+    const nomeExtraido = qual.trim().split(",")[0]?.trim() ?? "";
+    const genero = (nomeExtraido ? detectarGeneroPeloNome(nomeExtraido) : null)
+      ?? detectarGeneroDoTexto(qual);
     if (!genero) return;
     const corrigido = corrigirGeneroQualificacao(qual, genero);
     if (corrigido === qual) return;
@@ -238,7 +267,9 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
     setTimeout(() => setFlashGenero(null), 2000);
   }
 
-  const generoDetectado = autor.nome ? detectarGeneroPeloNome(autor.nome) : null;
+  // Extrai nome do início da qualificação para detecção mais precisa
+  const nomeParaGenero = (autor.nome || (autor.qualificacao ?? "").split(",")[0] || "").trim();
+  const generoDetectado = nomeParaGenero ? detectarGeneroPeloNome(nomeParaGenero) : null;
 
   return (
     <div className="space-y-8">
