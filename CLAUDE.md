@@ -39,6 +39,13 @@ const CATEGORIAS = [
 |---|---|---|
 | Consumidor | Voo Nacional 1A, Voo Internacional 1A, Voo Internacional 2A+ | Voo Nacional Múltiplos, Negativação Indevida, Réplica |
 
+### Convenções visuais dos cards de módulo
+
+- **Ícone:** 🌍 para todos os módulos de voo internacional (1 autor e 2+ autores usam o mesmo ícone)
+- **Separador título/subtítulo:** dois pontos `":"` — ex: `Voo Nacional: 1 Autor`, `Voo Internacional: 2 ou mais autores`
+- **Subtítulo:** `font-bold text-slate-700 dark:text-white` — negrito e branco no dark mode para destacar
+- **Nunca usar travessão `—`** como separador nos títulos dos cards
+
 ### Para adicionar nova categoria
 
 Acrescentar novo objeto ao array `CATEGORIAS` em `app/page.tsx`. Nenhum outro arquivo precisa ser alterado.
