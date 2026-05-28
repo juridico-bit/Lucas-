@@ -3,37 +3,41 @@ import HistoricoRecente from "@/components/HistoricoRecente";
 import DashboardMetrics from "@/components/DashboardMetrics";
 import ThemeToggle from "@/components/ThemeToggle";
 
-const MODULOS_ATIVOS = [
+const CATEGORIAS = [
   {
-    titulo: "Voo Nacional — 1 Autor",
-    subtitulo: "",
-    descricao: "Petição inicial para atraso ou cancelamento de voo doméstico com 1 autor",
-    href: "/voo-nacional",
-    icone: "✈️",
-    tag: "Disponível",
+    id: "consumidor",
+    titulo: "Consumidor",
+    descricao: "Direito do Consumidor",
+    icone: "⚖️",
+    modulos: [
+      {
+        titulo: "Voo Nacional",
+        subtitulo: "1 Autor",
+        descricao: "Petição inicial para atraso ou cancelamento de voo doméstico com 1 autor",
+        href: "/voo-nacional",
+        icone: "✈️",
+      },
+      {
+        titulo: "Voo Internacional",
+        subtitulo: "1 Autor",
+        descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 1 autor",
+        href: "/voo-internacional-1-autor",
+        icone: "🌐",
+      },
+      {
+        titulo: "Voo Internacional",
+        subtitulo: "2 ou mais autores",
+        descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 2 ou mais autores",
+        href: "/voo-internacional",
+        icone: "🌍",
+      },
+    ],
+    modulos_breve: [
+      { titulo: "Voo Nacional — Múltiplos Autores", icone: "👥" },
+      { titulo: "Negativação Indevida", icone: "🚫" },
+      { titulo: "Réplica", icone: "⚖️" },
+    ],
   },
-  {
-    titulo: "Voo Internacional — 1 Autor",
-    subtitulo: "",
-    descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 1 autor",
-    href: "/voo-internacional-1-autor",
-    icone: "🌐",
-    tag: "Disponível",
-  },
-  {
-    titulo: "Voo Internacional",
-    subtitulo: "(2 ou mais autores)",
-    descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 2 ou mais autores",
-    href: "/voo-internacional",
-    icone: "🌍",
-    tag: "Disponível",
-  },
-];
-
-const MODULOS_BREVE = [
-  { titulo: "Voo Nacional — Múltiplos Autores", icone: "👥" },
-  { titulo: "Negativação Indevida", icone: "🚫" },
-  { titulo: "Réplica", icone: "⚖️" },
 ];
 
 export default function Home() {
@@ -75,56 +79,89 @@ export default function Home() {
 
         {/* Módulos */}
         <div className="mb-10">
-          <div className="flex items-baseline justify-between mb-5">
+          <div className="flex items-baseline justify-between mb-6">
             <div>
               <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">Módulos</h2>
               <p className="text-slate-500 dark:text-slate-400 text-sm mt-0.5">Selecione o tipo de caso para iniciar</p>
             </div>
-            <span className="text-xs text-slate-400">{MODULOS_ATIVOS.length} ativo{MODULOS_ATIVOS.length !== 1 ? "s" : ""}</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* Módulos ativos */}
-            {MODULOS_ATIVOS.map((m) => (
-              <Link
-                key={m.href}
-                href={m.href}
-                className="group relative block rounded-2xl border border-indigo-100 dark:border-indigo-900 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all duration-200 hover:-translate-y-0.5"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <span className="text-3xl">{m.icone}</span>
-                  <span className="text-xs font-semibold bg-indigo-600 text-white px-2.5 py-1 rounded-full">
-                    {m.tag}
-                  </span>
-                </div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 transition-colors mb-1 text-sm">
-                  {m.titulo}
-                  {m.subtitulo && (
-                    <span className="ml-1.5 text-white text-xs font-normal opacity-70">{m.subtitulo}</span>
-                  )}
-                </h3>
-                <p className="text-xs text-slate-500 leading-relaxed">{m.descricao}</p>
-                <div className="mt-4 flex items-center gap-1 text-indigo-600 text-xs font-semibold group-hover:gap-2 transition-all">
-                  Abrir módulo <span>→</span>
-                </div>
-              </Link>
-            ))}
+          <div className="space-y-8">
+            {CATEGORIAS.map((categoria) => {
+              const totalAtivos = categoria.modulos.length;
+              return (
+                <div key={categoria.id}>
 
-            {/* Módulos em breve */}
-            {MODULOS_BREVE.map((m) => (
-              <div
-                key={m.titulo}
-                className="relative rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/60 dark:bg-slate-800/40 p-6 cursor-not-allowed"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <span className="text-3xl opacity-40">{m.icone}</span>
-                  <span className="text-xs font-semibold bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full">
-                    Em breve
-                  </span>
+                  {/* Cabeçalho da categoria */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg flex items-center justify-center text-base">
+                        {categoria.icone}
+                      </div>
+                      <div>
+                        <h3 className="text-base font-bold text-slate-800 dark:text-slate-100 leading-tight">
+                          {categoria.titulo}
+                        </h3>
+                        <p className="text-xs text-slate-400 dark:text-slate-500 leading-tight">
+                          {categoria.descricao}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700 ml-2" />
+                    <span className="text-xs text-slate-400 whitespace-nowrap">
+                      {totalAtivos} ativo{totalAtivos !== 1 ? "s" : ""}
+                    </span>
+                  </div>
+
+                  {/* Grid de módulos ativos */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                    {categoria.modulos.map((m) => (
+                      <Link
+                        key={m.href}
+                        href={m.href}
+                        className="group relative block rounded-2xl border border-indigo-100 dark:border-indigo-900 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all duration-200 hover:-translate-y-0.5"
+                      >
+                        <div className="flex items-start justify-between mb-4">
+                          <span className="text-3xl">{m.icone}</span>
+                          <span className="text-xs font-semibold bg-indigo-600 text-white px-2.5 py-1 rounded-full">
+                            Disponível
+                          </span>
+                        </div>
+                        <h4 className="font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 transition-colors text-sm leading-tight">
+                          {m.titulo}
+                          {m.subtitulo && (
+                            <span className="ml-1.5 text-xs font-normal text-slate-400 dark:text-slate-500">
+                              — {m.subtitulo}
+                            </span>
+                          )}
+                        </h4>
+                        <p className="text-xs text-slate-500 leading-relaxed mt-1">{m.descricao}</p>
+                        <div className="mt-4 flex items-center gap-1 text-indigo-600 text-xs font-semibold group-hover:gap-2 transition-all">
+                          Abrir módulo <span>→</span>
+                        </div>
+                      </Link>
+                    ))}
+
+                    {/* Módulos em breve dentro da categoria */}
+                    {categoria.modulos_breve.map((m) => (
+                      <div
+                        key={m.titulo}
+                        className="relative rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/60 dark:bg-slate-800/40 p-6 cursor-not-allowed"
+                      >
+                        <div className="flex items-start justify-between mb-4">
+                          <span className="text-3xl opacity-40">{m.icone}</span>
+                          <span className="text-xs font-semibold bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full">
+                            Em breve
+                          </span>
+                        </div>
+                        <h4 className="font-bold text-slate-400 text-sm">{m.titulo}</h4>
+                      </div>
+                    ))}
+                  </div>
+
                 </div>
-                <h3 className="font-bold text-slate-400 mb-1 text-sm">{m.titulo}</h3>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 

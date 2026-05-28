@@ -10,6 +10,49 @@ Sistema interno do escritório **LMC Advogados** para geração automatizada de 
 - **docxtemplater + pizzip** — geração de .docx com `{PLACEHOLDER}`
 - **date-fns** — parse e cálculos de datas
 
+## Homepage — Estrutura de Categorias (28/05/2026)
+
+A homepage (`app/page.tsx`) organiza os módulos em **categorias**. Cada categoria agrupa módulos ativos + módulos "em breve" relacionados.
+
+### Estrutura de dados
+
+```tsx
+const CATEGORIAS = [
+  {
+    id: "consumidor",
+    titulo: "Consumidor",
+    descricao: "Direito do Consumidor",
+    icone: "⚖️",
+    modulos: [           // ← módulos disponíveis (card azul "Disponível")
+      { titulo, subtitulo, descricao, href, icone },
+    ],
+    modulos_breve: [     // ← módulos futuros (card cinza "Em breve")
+      { titulo, icone },
+    ],
+  },
+];
+```
+
+### Categorias atuais
+
+| Categoria | Módulos ativos | Em breve |
+|---|---|---|
+| Consumidor | Voo Nacional 1A, Voo Internacional 1A, Voo Internacional 2A+ | Voo Nacional Múltiplos, Negativação Indevida, Réplica |
+
+### Para adicionar nova categoria
+
+Acrescentar novo objeto ao array `CATEGORIAS` em `app/page.tsx`. Nenhum outro arquivo precisa ser alterado.
+
+### Para adicionar módulo em breve
+
+Acrescentar `{ titulo, icone }` em `modulos_breve` da categoria correspondente.
+
+### Para ativar módulo "Em breve"
+
+Mover o objeto de `modulos_breve` para `modulos`, adicionando `href`.
+
+---
+
 ## Estrutura de Arquivos Chave
 
 | Arquivo | Função |
