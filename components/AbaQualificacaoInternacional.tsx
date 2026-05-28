@@ -375,7 +375,7 @@ function AutorCard({ index, autor, total, onUpdate, onRemove, validarCampos }: A
           <p className="mt-1 text-xs text-red-600 dark:text-red-400">⚠ {erroNasc}</p>
         )}
         <p className="mt-1.5 text-[11px] text-slate-400 dark:text-slate-500 leading-snug">
-          ℹ️ Preencha somente se o sistema avisar que o autor é idoso (≥ 60 anos).
+          ℹ️ Preencha somente se o sistema da Resolvvi avisar que o autor é idoso (≥ 60 anos).
         </p>
       </div>
     </div>

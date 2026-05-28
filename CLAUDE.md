@@ -250,7 +250,7 @@ Quando um bloco condicional como `{#tem_gastos}` está **dentro do texto** de um
 O campo "Data de nascimento" na aba Qualificação **não é obrigatório** — só deve ser preenchido se o sistema alertar que o autor é idoso.
 
 Texto informativo exibido abaixo do campo em ambos os módulos (nacional e internacional):
-> *ℹ️ Preencha somente se o sistema avisar que o autor é idoso (≥ 60 anos).*
+> *ℹ️ Preencha somente se o sistema da Resolvvi avisar que o autor é idoso (≥ 60 anos).*
 
 **Arquivos:** `components/AbaQualificacao.tsx` e `components/AbaQualificacaoInternacional.tsx`
 

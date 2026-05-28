@@ -409,7 +409,7 @@ export default function AbaQualificacao({ dados, onChange, camposIA, validarCamp
               Digite manualmente ou envie uma foto do RG, CNH ou outro documento para extração automática.
             </p>
             <p className="mt-1 text-[11px] text-slate-400 dark:text-slate-500 leading-snug">
-              ℹ️ Preencha somente se o sistema avisar que o autor é idoso (≥ 60 anos).
+              ℹ️ Preencha somente se o sistema da Resolvvi avisar que o autor é idoso (≥ 60 anos).
             </p>
           </div>
 
