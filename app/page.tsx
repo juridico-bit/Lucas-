@@ -22,7 +22,7 @@ const CATEGORIAS = [
         subtitulo: "1 Autor",
         descricao: "Petição inicial para atraso ou cancelamento de voo internacional com 1 autor",
         href: "/voo-internacional-1-autor",
-        icone: "🌐",
+        icone: "🌍",
       },
       {
         titulo: "Voo Internacional",
@@ -131,7 +131,7 @@ export default function Home() {
                           {m.titulo}
                           {m.subtitulo && (
                             <span className="ml-1.5 text-xs font-bold text-slate-700 dark:text-white">
-                              — {m.subtitulo}
+                              : {m.subtitulo}
                             </span>
                           )}
                         </h4>
