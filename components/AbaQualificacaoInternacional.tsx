@@ -99,7 +99,11 @@ function corrigirGeneroQualificacao(texto: string, genero: "M" | "F"): string {
     r = r.replace(/o\s*\(a\)/gi, "o");
     r = r.replace(/\s*\(a\)/g, "");
   } else {
+    // "brasileira(a)" → "brasileira"  (já feminino — só remove o marcador)
+    r = r.replace(/a\s*\(a\)/gi, "a");
+    // "brasileiro(a)" → "brasileira"  (masculino → feminino)
     r = r.replace(/o\s*\(a\)/gi, "a");
+    // demais "(a)" após consoante, ex: "engenheir(a)" → "engenheira"
     r = r.replace(/\s*\(a\)/g, "a");
   }
 
